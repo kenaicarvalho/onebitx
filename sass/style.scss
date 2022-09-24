@@ -1,0 +1,17 @@
+// Font
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;514&display=swap");
+
+// Variables
+@import "./commonElements/variables.scss";
+
+// Common Elements
+@import "./commonElements/commonElements.scss"; // Home
+
+// Home
+@import "./pages/home.scss";
+
+// Falcon 9
+@import "./pages/falcon9.scss";
+
+// Human Flight
+@import "./pages/humanFlight.scss";

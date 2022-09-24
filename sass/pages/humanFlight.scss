@@ -1,0 +1,159 @@
+.containerAll {
+  &.section8 {
+    background-image: url(../../images/humanFlight/01.jpg);
+  }
+
+  &.section9 {
+    background-image: url(../../images/humanFlight/02.jpg);
+  }
+
+  &.section10 {
+    background-image: url(../../images/humanFlight/03.jpg);
+  }
+
+  &.section11 {
+    background-image: url(../../images/humanFlight/04.jpg);
+  }
+
+  &.section12 {
+    background-image: url(../../images/humanFlight/05.jpg);
+  }
+}
+
+.container01Content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .titleHuman {
+    font-size: 120px;
+  }
+
+  .subtitleHuman {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .arrowDown {
+    width: 130px;
+  }
+}
+
+.btn2 {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 2px solid white;
+}
+
+.earthDesc {
+  background-color: black;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: $table-item;
+    font-weight: 400;
+    font-size: 20px;
+    width: 800px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+  }
+}
+
+.containerRightContent {
+  margin-left: 55%;
+  padding-top: 15%;
+}
+
+.titleSection {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+
+.containerLeftContent {
+  margin-left: 5%;
+  padding-top: 15%;
+}
+
+// Media query
+@media (max-width: 768px) {
+  .container01Content {
+    .titleHuman {
+      font-size: 90px;
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+
+  .containerRightContent {
+    margin-left: 15%;
+    padding-top: 15%;
+  }
+
+  .containerLeftContent {
+    margin-left: 15%;
+    padding-top: 15%;
+  }
+
+  .earthDesc {
+    p {
+      color: $table-item;
+      font-weight: 400;
+      font-size: 18px;
+      width: auto;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .container01Content {
+    .titleHuman {
+      font-size: 60px;
+    }
+
+    .subtitleHuman {
+      font-size: 24px;
+    }
+  }
+
+  .containerRightContent {
+    margin-left: 5%;
+  }
+
+  .containerLeftContent {
+    margin-left: 5%;
+  }
+
+  .titleSection {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container01Content {
+    .titleHuman {
+      font-size: 40px;
+    }
+
+    img {
+      width: 100px;
+    }
+  }
+}

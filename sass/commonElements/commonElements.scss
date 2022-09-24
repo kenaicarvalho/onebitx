@@ -1,0 +1,78 @@
+* {
+  color: white;
+}
+
+.containerAll {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header {
+  font-size: 12px;
+  font-weight: bold;
+  padding-top: 15px;
+
+  #navItem {
+    &:hover {
+      color: $link-hover;
+    }
+  }
+}
+
+.logoOBX {
+  width: 240px;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+
+.downloadDesc {
+  background-color: black;
+  height: 85vh;
+  padding-top: 240px;
+
+  a {
+    text-decoration: none;
+    color: $link-hover;
+    border-bottom: 1px solid white;
+
+    &:hover {
+      color: $copy-color;
+    }
+  }
+
+  button {
+    border: 2px solid white;
+    margin-right: 10px;
+    width: 250px;
+  }
+}
+
+// Media query
+
+@media (max-width: 449px) {
+  .downloadDesc {
+    button {
+      margin: 10px 0px;
+    }
+  }
+}
+
+@media (max-width: 405px) {
+  .logoOBX {
+    width: 180px;
+    margin-top: 15px;
+  }
+
+  .footer {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px) {
+  .logoOBX {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
